@@ -1,0 +1,7 @@
+bert-score==0.3.13
+faiss-cpu==1.7.4
+faiss-gpu==1.7.2
+gensim==4.2.0
+numpy==1.24.0
+simcse==0.4
+torch==1.12.1
