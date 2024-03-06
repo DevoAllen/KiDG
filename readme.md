@@ -53,7 +53,7 @@ This script will complete the construction of the KiDG graph, and traverse it to
 #### Inpainting Model
 We use [bart-chinese-large](https://huggingface.co/fnlp/bart-large-chinese) as the backbone for the inpainting model. Please collect dialogue corpora on your own. 
 
-The training of the inpainting model is essentially the **token infilling** task of the BART model. Given a dialogue $[u_1, u_2, u_3, u_4]$, where $u_i$ is an utterance, the input is $[u_1, u_2, <mask> , u_4]$, then the corresponding label is $u_3$. 
+The training of the inpainting model is essentially the **token infilling** task of the BART model. Given a dialogue $[u_1, u_2, u_3, u_4]$, where $u_i$ is an utterance, the input is $[u_1, u_2, MASK, u_4]$, then the corresponding label is $u_3$ (Details can be found in our paper and [Dialogue Inpainting] paper(https://arxiv.org/abs/2205.09073)). 
 
 For code reference, you can refer to the BART training [examples](https://github.com/fastnlp/CPT).
 
