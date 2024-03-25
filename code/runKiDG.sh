@@ -31,6 +31,6 @@ python build_cross_relation.py \
 python traverseGraph.py
 --intra_path ${path2IntraG}/kdconv_intra_relations_F.pkl \
 --inter_path ${path2InterG} \
---graph_path ${path2graph}/kdconv_cross.pkl\
+--graph_path ${path2graph}\
 --output_path ../output
     
